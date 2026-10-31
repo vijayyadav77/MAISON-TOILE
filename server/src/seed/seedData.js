@@ -111,6 +111,15 @@ const seedDatabase = async () => {
         featured: true,
         order: 5,
       },
+      {
+        name: 'Fine Accessories & Jewelry',
+        slug: 'fine-accessories',
+        description: 'Hand-cast 18k vermeil cuff bracelets, sculptural earrings, and mulberry silk twill foulards.',
+        image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800',
+        bannerImage: 'https://images.unsplash.com/photo-1611591475152-4783113998f4?auto=format&fit=crop&q=80&w=1600',
+        featured: true,
+        order: 6,
+      },
     ];
 
     const createdCategories = await Category.insertMany(categoriesData);
